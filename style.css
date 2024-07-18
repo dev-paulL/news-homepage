@@ -71,6 +71,7 @@ h1 {
 }
 
 .main-article_readmore-btn {
+  display: block;
   cursor: pointer;
   background: var(--soft-red);
   border: none;
@@ -81,8 +82,15 @@ h1 {
   color: var(--very-dark-blue);
   margin-top: 1rem;
   font-size: 0.75rem;
+  width: fit-content;
+  transition: 0.2s ease-in-out;
 }
 
+.main-article_readmore-btn:hover {
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
+  font-weight: 600;
+}
 .new-articles-section {
   background-color: var(--very-dark-blue);
   padding: 1.5rem;
@@ -103,12 +111,15 @@ h1 {
   padding: 1.5rem 0;
 }
 
-.new-article p:first-child {
+.new-article a {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
-.new-article p:last-child {
+.new-article a:hover {
+  color: var(--soft-orange);
+}
+.new-article p {
   color: var(--grayish-blue);
 }
 .new-articles_separator {
@@ -155,6 +166,7 @@ h1 {
   grid-area: title;
   font-weight: 700;
   color: var(--very-dark-blue);
+  padding: 0.5rem 0;
   font-size: 1.2rem;
 }
 
@@ -180,29 +192,35 @@ footer a {
   color: var(--soft-red);
 }
 
+.desktop-nav {
+  display: none;
+}
+
 @media (min-width: 64rem) {
   body {
     padding: 5rem;
     max-height: 100vh;
-    
   }
 
   main {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   header {
-    max-width: 90%;
+    max-width: 80%;
   }
   section {
     display: grid;
     padding: 0;
     gap: 1rem;
     max-width: 100%;
-    grid-template-columns: auto auto 28%;
+    grid-template-columns: auto auto 32%;
     grid-template-areas: "mainArticle mainArticle newsSection" "mainArticle mainArticle newsSection" "top3 top3 top3";
   }
-
+  a {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
   .main-article {
     grid-area: mainArticle;
     display: grid;
@@ -219,11 +237,10 @@ footer a {
   }
   .new-articles-section {
     grid-area: newsSection;
-    
   }
 
   .main-article-content {
-    width: 70%;
+    width: 85%;
   }
   .top3-articles-section {
     grid-area: top3;
@@ -235,6 +252,34 @@ footer a {
 
   .top3-article-info p {
     width: 60%;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
+  }
+
+  .menu_open_btn {
+    display: none;
+  }
+  .desktop-nav {
+    display: block;
+    width: auto;
+  }
+
+  li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 3rem;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    cursor: pointer;
+  }
+
+  .desktop-nav a:hover {
+    color: var(--soft-red);
+  }
+
+  .top3-article a:hover {
+    color: var(--soft-red);
   }
 }
