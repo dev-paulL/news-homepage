@@ -15,14 +15,24 @@ Users should be able to:
 
 ### Screenshot
 
-![](./temp_screenshot.png)
+![](./screenshot_mobile.png)
+![](./screenshot_desktop.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://dev-paull.github.io/news-homepage/](https://dev-paull.github.io/news-homepage/)
 
 ## My process
+
+🛑🛑🛑 WORK IN PROGRESS 🛑🛑🛑
+
+- Started by analyzing the screenshots and think about how to structure the grids and flex-boxes. 
+- Realized the mobile design first
+- Adapted the page to desktop-sized window. 
+- Had fun with grids and flexboxes 👍
+
+I will do the nav and the last adjustments in the end.
 
 ### Built with
 
@@ -34,12 +44,9 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+*Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.*
 
-To see how you can add code snippets, see below:
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+*Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.*
