@@ -16,6 +16,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot_mobile.png)
+![](./screenshot_mobile_nav.png)
 ![](./screenshot_desktop.png)
 
 ### Links
@@ -27,12 +28,11 @@ Users should be able to:
 
 🛑🛑🛑 WORK IN PROGRESS 🛑🛑🛑
 
-- Started by analyzing the screenshots and think about how to structure the grids and flex-boxes. 
-- Realized the mobile design first
+- Started by analyzing the screenshots and thinking about how to structure the layout
+- Designed mobile version first
 - Adapted the page to desktop-sized window. 
-- Had fun with grids and flexboxes 👍
-
-I will do the nav and the last adjustments in the end.
+- Built the navigation bar
+- Optimized accessibility
 
 ### Built with
 

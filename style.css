@@ -55,6 +55,7 @@ header {
   background: transparent;
   border: none;
   cursor: pointer;
+  padding: 0.5rem;
   /* max-width: fit-content; */
 }
 
@@ -94,12 +95,12 @@ h1 {
   width: fit-content;
 }
 
-.main-article_readmore-btn:hover, .main-article_readmore-btn:focus {
+.main-article_readmore-btn:hover,
+.main-article_readmore-btn:focus {
   background-color: var(--very-dark-blue);
   color: var(--off-white);
   font-weight: 600;
 }
-
 
 .new-articles-section {
   background-color: var(--very-dark-blue);
@@ -136,7 +137,8 @@ q::before,
 q::after {
   display: none;
 }
-.new-article a:hover,  .new-article a:focus {
+.new-article a:hover,
+.new-article a:focus {
   color: var(--soft-orange);
 }
 .new-article q {
@@ -169,7 +171,6 @@ q::after {
   justify-content: space-between;
 }
 
-
 .top3-article_position {
   color: var(--soft-red);
   font-size: 2.1rem;
@@ -194,7 +195,8 @@ q::after {
   margin: 1rem 0;
 }
 
-.top3-article_title:hover, .top3-article_title:focus{
+.top3-article_title:hover,
+.top3-article_title:focus {
   color: var(--soft-red);
 }
 
@@ -230,7 +232,8 @@ footer a {
   cursor: pointer;
 }
 
-.desktop-nav a:hover, .desktop-nav a:focus {
+.desktop-nav a:hover,
+.desktop-nav a:focus {
   color: var(--soft-red);
 }
 
@@ -241,23 +244,23 @@ a {
 }
 
 .mobile-nav {
-  position: absolute;
-  min-width: 60vw;
+  position: fixed;
+  min-width: 70%;
   background-color: var(--off-white);
   min-height: 100%;
   right: 0;
   top: 0;
   display: none;
   flex-flow: column;
-  z-index: 1;
-  max-width: 100%;
+  z-index: 9;
+  max-width: 19rem;
   padding: 2rem 1rem;
 }
 
 .mobile-nav button {
   max-width: auto;
   align-self: end;
-  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .mobile-nav li {
@@ -271,24 +274,27 @@ a {
   font-weight: 500;
 }
 
-.mobile-nav a:hover, .mobile-nav a:focus {
+.mobile-nav a:hover,
+.mobile-nav a:focus {
   color: var(--soft-red);
 }
 
-a, button {
+a,
+button {
   outline: none;
 }
 
-a:focus, button:focus {
+a:focus,
+button:focus {
   outline: 1px dashed var(--very-dark-blue);
-
 }
 
 .overlay {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
-  z-index: 1;
+  left: 0;
+  z-index: 6;
   height: 100%;
   width: 100%;
   background-color: var(--dark-grayish-blue);

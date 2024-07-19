@@ -24,10 +24,20 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <div class="overlay"></div>
+    <div class="overlay" aria-hidden="true"></div>
     <header role="banner">
-      <img src="assets/images/logo.svg" alt="Web 3" class="header-logo" />
-      <button class="menu_open_btn">
+      <img
+        src="assets/images/logo.svg"
+        alt="Website Logo"
+        class="header-logo"
+      />
+      <button
+        class="menu_open_btn"
+        aria-label="Open Menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        aria-hidden="false"
+      >
         <img src="assets/images/icon-menu.svg" alt="Open Menu" />
       </button>
       <nav
@@ -44,8 +54,19 @@
         </ul>
       </nav>
 
-      <nav class="mobile-nav" role="navigation" aria-label="Mobile Navigation">
-        <button class="menu_close_btn">
+      <nav
+        id="mobile-nav"
+        class="mobile-nav"
+        role="navigation"
+        aria-hidden="true"
+        aria-label="Mobile Navigation"
+        aria-live="assertive"
+      >
+        <button
+          class="menu_close_btn"
+          aria-controls="mobile-nav"
+          aria-label="Close Menu"
+        >
           <img src="assets/images/icon-menu-close.svg" alt="Close Menu" />
         </button>
         <ul>
@@ -65,16 +86,21 @@
               srcset="assets/images/image-web-3-mobile.jpg"
               media="(max-width:40rem)"
             />
-            <img src="assets/images/image-web-3-desktop.jpg" alt="" />
+            <img
+              src="assets/images/image-web-3-desktop.jpg"
+              alt="The Bright Future of Web 3.0"
+            />
           </picture>
 
           <h1>The Bright Future of Web 3.0?</h1>
           <div class="main-article-content">
-            <q cite="#">
-              We dive into the next evolution of the web that claims to put the
-              power of the platforms back into the hands of the people. But is
-              it really fulfilling its promise?
-            </q>
+            <blockquote cite="#">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+            </blockquote>
 
             <a href="#" class="main-article_readmore-btn">Read more</a>
           </div>
@@ -85,27 +111,33 @@
 
           <article role="article" class="new-article">
             <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
-            <q cite="#">Will hydrogen-fueled cars ever catch up to EVs?</q>
+            <p>
+              <q cite="#">Will hydrogen-fueled cars ever catch up to EVs?</q>
+            </p>
           </article>
 
           <hr class="new-articles_separator" />
 
           <article role="article" class="new-article">
             <h3><a href="#">The Downsides of AI Artistry</a></h3>
-            <q cite="#">
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </q>
+            <p>
+              <q cite="#">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </q>
+            </p>
           </article>
 
           <hr class="new-articles_separator" />
 
           <article role="article" class="new-article">
             <h3><a href="#">Is VC Funding Drying Up?</a></h3>
-            <q cite="#">
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </q>
+            <p>
+              <q cite="#">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </q>
+            </p>
           </article>
         </div>
 
@@ -115,11 +147,13 @@
             <div class="top3-article-info">
               <p class="top3-article_position">01</p>
               <h3>
-                <a href="" class="top3-article_title">Reviving Retro PCs</a>
+                <a href="#" class="top3-article_title">Reviving Retro PCs</a>
               </h3>
-              <q cite="#" class="top3-article_content">
-                What happens when old PCs are given modern upgrades?
-              </q>
+              <p>
+                <q cite="#" class="top3-article_content">
+                  What happens when old PCs are given modern upgrades?
+                </q>
+              </p>
             </div>
           </article>
 
@@ -128,11 +162,15 @@
             <div class="top3-article-info">
               <p class="top3-article_position">02</p>
               <h3>
-                <a href="" class="top3-article_title">Top 10 Laptops of 2022</a>
+                <a href="#" class="top3-article_title"
+                  >Top 10 Laptops of 2022</a
+                >
               </h3>
-              <q cite="#" class="top3-article_content">
-                Our best picks for various needs and budgets.
-              </q>
+              <p>
+                <q cite="#" class="top3-article_content">
+                  Our best picks for various needs and budgets.
+                </q>
+              </p>
             </div>
           </article>
 
@@ -141,11 +179,13 @@
             <div class="top3-article-info">
               <p class="top3-article_position">03</p>
               <h3>
-                <a href="" class="top3-article_title">The Growth of Gaming</a>
+                <a href="#" class="top3-article_title">The Growth of Gaming</a>
               </h3>
-              <q cite="#" class="top3-article_content">
-                How the pandemic has sparked fresh opportunities.
-              </q>
+              <p>
+                <q cite="#" class="top3-article_content">
+                  How the pandemic has sparked fresh opportunities.
+                </q>
+              </p>
             </div>
           </article>
         </div>
