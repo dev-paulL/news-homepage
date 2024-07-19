@@ -28,7 +28,7 @@ main {
 body {
   font-size: 0.938rem;
   min-height: 100%;
-  padding: 2rem;
+  padding: 1rem;
   font-family: "Inter", sans-serif;
   display: flex;
   flex-flow: column;
@@ -164,7 +164,11 @@ q::after {
 
 .top3-article-info {
   margin-left: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
+
 
 .top3-article_position {
   color: var(--soft-red);
@@ -352,6 +356,7 @@ a:focus, button:focus {
 
   .top3-article-info q {
     margin-top: 0.5rem;
+    font-size: 1rem;
   }
 
   .menu_open_btn {
