@@ -4,8 +4,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ## Overview
 
-🛑🛑🛑 WORK IN PROGRESS 🛑🛑🛑
-
 ### The challenge
 
 Users should be able to:
@@ -21,12 +19,10 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/frontend-mentor-news-homepage-XYK_mKILde](https://www.frontendmentor.io/solutions/frontend-mentor-news-homepage-XYK_mKILde)
 - Live Site URL: [https://dev-paull.github.io/news-homepage/](https://dev-paull.github.io/news-homepage/)
 
 ## My process
-
-🛑🛑🛑 WORK IN PROGRESS 🛑🛑🛑
 
 - Started by analyzing the screenshots and thinking about how to structure the layout
 - Designed mobile version first
@@ -41,12 +37,3 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-### What I learned
-
-*Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.*
-
-
-### Continued development
-
-*Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.*

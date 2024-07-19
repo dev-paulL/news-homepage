@@ -56,7 +56,6 @@ header {
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  /* max-width: fit-content; */
 }
 
 picture img {
@@ -74,7 +73,7 @@ h1 {
 .main-article-content {
   margin: 1.5rem 0 3rem 0;
 }
-.main-article q {
+.main-article blockquote {
   color: var(--dark-grayish-blue);
   line-height: 1.5;
   font-size: 1rem;
@@ -160,7 +159,6 @@ q::after {
   display: flex;
   margin-top: 2rem;
   padding: 0.5rem;
-  flex: auto;
   width: auto;
 }
 
@@ -179,7 +177,6 @@ q::after {
 }
 
 .top3-article img {
-  grid-area: picture;
   min-height: 100%;
   max-height: 7rem;
   width: auto;
