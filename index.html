@@ -17,20 +17,20 @@
       href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style_desktop.css" type="text/css" />
 
     <title>Frontend Mentor | News homepage</title>
 
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="overlay"></div>
-    <header>
-      <img src="assets/images/logo.svg" alt="" class="header-logo" />
+    <header role="banner">
+      <img src="assets/images/logo.svg" alt="Web 3" class="header-logo" />
       <button class="menu_open_btn">
-        <img src="assets/images/icon-menu.svg" alt="Menu button" />
+        <img src="assets/images/icon-menu.svg" alt="Open Menu" />
       </button>
-      <nav class="desktop-nav">
+      <nav class="desktop-nav" role="navigation" aria-label="Desktop Navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
@@ -40,8 +40,10 @@
         </ul>
       </nav>
 
-      <nav class="mobile-nav">
-        <button><img src="assets/images/icon-menu-close.svg" alt="" /></button>
+      <nav class="mobile-nav" role="navigation" aria-label="Mobile Navigation">
+        <button class="menu_close_btn">
+          <img src="assets/images/icon-menu-close.svg" alt="Close Menu" />
+        </button>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">New</a></li>
@@ -51,15 +53,15 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main role="main">
       <section>
-        <article class="main-article">
+        <article role="article" class="main-article">
           <picture>
             <source
               srcset="assets/images/image-web-3-mobile.jpg"
               media="(max-width:40rem)"
             />
-            <img src="assets/images/image-web-3-desktop.jpg" />
+            <img src="assets/images/image-web-3-desktop.jpg" alt="" />
           </picture>
 
           <h1>The Bright Future of Web 3.0?</h1>
@@ -70,22 +72,22 @@
               it really fulfilling its promise?
             </q>
 
-            <a class="main-article_readmore-btn">Read more</a>
+            <a href="#" class="main-article_readmore-btn">Read more</a>
           </div>
         </article>
 
         <div class="new-articles-section">
           <h2>New</h2>
 
-          <article class="new-article">
-            <a href="#">Hydrogen VS Electric Cars</a>
+          <article role="article" class="new-article">
+            <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
             <q cite="#">Will hydrogen-fueled cars ever catch up to EVs?</q>
           </article>
 
           <hr class="new-articles_separator" />
 
-          <article class="new-article">
-            <a href="#">The Downsides of AI Artistry</a>
+          <article role="article" class="new-article">
+            <h3><a href="#">The Downsides of AI Artistry</a></h3>
             <q cite="#">
               What are the possible adverse effects of on-demand AI image
               generation?
@@ -94,8 +96,8 @@
 
           <hr class="new-articles_separator" />
 
-          <article class="new-article">
-            <a href="#">Is VC Funding Drying Up?</a>
+          <article role="article" class="new-article">
+            <h3><a href="#">Is VC Funding Drying Up?</a></h3>
             <q cite="#">
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.
@@ -104,33 +106,37 @@
         </div>
 
         <div class="top3-articles-section">
-          <article class="top3-article">
+          <article role="article" class="top3-article">
             <img src="assets/images/image-retro-pcs.jpg" alt="" />
             <div class="top3-article-info">
               <p class="top3-article_position">01</p>
-              <a href="" class="top3-article_title">Reviving Retro PCs</a>
+              <h3>
+                <a href="" class="top3-article_title">Reviving Retro PCs</a>
+              </h3>
               <q cite="#" class="top3-article_content">
                 What happens when old PCs are given modern upgrades?
               </q>
             </div>
           </article>
 
-          <article class="top3-article">
+          <article role="article" class="top3-article">
             <img src="assets/images/image-top-laptops.jpg" alt="" />
             <div class="top3-article-info">
               <p class="top3-article_position">02</p>
-              <a href="" class="top3-article_title">Top 10 Laptops of 2022</a>
+              <h3>
+                <a href="" class="top3-article_title">Top 10 Laptops of 2022</a>
+              </h3>
               <q cite="#" class="top3-article_content">
                 Our best picks for various needs and budgets.
               </q>
             </div>
           </article>
 
-          <article class="top3-article">
+          <article role="article" class="top3-article">
             <img src="assets/images/image-gaming-growth.jpg" alt="" />
             <div class="top3-article-info">
               <p class="top3-article_position">03</p>
-              <a class="top3-article_title">The Growth of Gaming</a>
+              <h3><a class="top3-article_title">The Growth of Gaming</a></h3>
               <q cite="#" class="top3-article_content">
                 How the pandemic has sparked fresh opportunities.
               </q>
@@ -140,7 +146,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
